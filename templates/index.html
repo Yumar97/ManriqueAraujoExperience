@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Programador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter y Roboto Mono) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="header">
+        <div class="container flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold text-white">Yumar Manrique Araujo</h1>
+                <p class="text-base text-gray-400">Desarrollador Full-Stack</p>
+            </div>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#educacion" class="nav-link">Educación</a>
+                <a href="#idiomas" class="nav-link">Idiomas</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <!-- Menú hamburguesa para móviles -->
+            <button id="menu-toggle" class="md:hidden text-gray-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900">
+            <nav class="flex flex-col items-center py-4 space-y-4">
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#educacion" class="nav-link">Educación</a>
+                <a href="#idiomas" class="nav-link">Idiomas</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-2xl font-bold mb-4">Sobre Mí</h2>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="avatar-bg w-32 h-32 rounded-full border-4 border-blue-500"></div>
+                <p class="text-lg" id="sobre-mi-text"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-2xl font-bold mb-4">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="mb-2">Inglés - Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Microsoft Office (Word, Excel, PowerPoint) - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Soporte Técnico y Redes - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Analista - Programador MVC - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Java - Nivel Junior</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 40%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">C# - Nivel Básico</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 30%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">VBasic - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">SQL Server - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">MySQL - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">HTML5 (Estructuras Web Semánticas y Accesibles) - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Diseño Responsivo con Media Queries - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">CSS y Tailwind CSS (Diseños Responsivos y Animaciones Personalizadas) - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Python (Desarrollo Backend con Flask, Lógica del Servidor, Integración con Bases de Datos) - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Modelo de Negocio - Modelo Canvas - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Metodología Ágil SCRUM - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Mantenimiento Preventivo y Correctivo - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;"></div></div>
+                </div>
+                <div>
+                    <p class="mb-2">Curso 'Productos y Canales Digitales' (Banco BCP) - Nivel Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 55%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-2xl font-bold mb-4">Experiencia Laboral</h2>
+            <div class="relative border-l-2 border-blue-500 pl-6">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Digitador - Inetum Peru S.A.C</h3>
+                    <p class="text-gray-400">Septiembre 2023 - Enero 2024</p>
+                    <p>Encargado de digitar actas físicas de los años 1960 en adelante, corregir errores de escritura o gramática, ajustar detalles de escaneo, administrar procesos, dar soporte a usuarios y resolver incidencias complejas desde Service Desk & Operation.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Asistente de Retiros - Chacruna Marketing S.A.C</h3>
+                    <p class="text-gray-400">Enero 2023 - Junio 2023</p>
+                    <p>Revisión de movimientos de usuarios para cumplir normas de retiro y verificación de información para prevenir fraudes.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Atención al Cliente - Encargado del CAC - Real Plaza - Primavera</h3>
+                    <p class="text-gray-400">Agosto 2020 - Octubre 2021</p>
+                    <p>Supervisión de apertura y cierre de locales, atención a dudas de clientes, recepción y entrega de pedidos virtuales, orientación sobre actividades, manejo de objetos perdidos y respuesta rápida a accidentes, incluyendo soporte de seguro de salud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-2xl font-bold mb-4">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="project-card">
+                    <h3 class="text-lg font-semibold mb-2">Proyecto de Digitación de Actas</h3>
+                    <p class="text-gray-400 mb-2">Sistema de digitalización y corrección de actas históricas en Inetum Peru S.A.C.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Ver Proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="text-lg font-semibold mb-2">Sistema de Verificación de Retiros</h3>
+                    <p class="text-gray-400 mb-2">Herramienta de revisión de usuarios en Chacruna Marketing S.A.C.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Ver Proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="text-lg font-semibold mb-2">Gestión de Atención al Cliente</h3>
+                    <p class="text-gray-400 mb-2">Sistema de registro de turnos de doctores que trabajan en la empresa EsSalud.Esta pagina ayuda a registrar turnos y visualizarlos en un documento excel ademas de otras funciones.</p>
+                    <a href="https://emergency-hours.onrender.com/" class="text-blue-500 hover:underline" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Educación -->
+    <section id="educacion" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-2xl font-bold mb-4">Educación</h2>
+            <div class="relative border-l-2 border-blue-500 pl-6">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Ingeniería en Sistemas de Información - Universidad San Ignacio de Loyola</h3>
+                    <p class="text-gray-400">2021 - Actualidad</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Desarrollo de Computación Informática - Instituto Superior Tecnológico IDAT</h3>
+                    <p class="text-gray-400">2016 - 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Idiomas -->
+    <section id="idiomas" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-2xl font-bold mb-4">Idiomas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="mb-2">Inglés - Intermedio</p>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div>
+                    <p class="text-lg mb-2">Celular: <a href="tel:+51943039019" class="text-blue-500 hover:underline">+51 943039019</a></p>
+                    <p class="text-lg mb-2">Email: <a href="mailto:yumar.manrique@gmail.com" class="text-blue-500 hover:underline">yumar.manrique@gmail.com</a></p>
+                    <p class="text-lg">Referencias:</p>
+                    <p class="text-lg mb-2">Rosa Domínguez - Representante de RR.HH., CHACRUNA MARKETING S.A.C. <a href="mailto:rdominguez@chacrunamarketing.com" class="text-blue-500 hover:underline">rdominguez@chacrunamarketing.com</a></p>
+                    <p class="text-lg">Esteban Cárdenas - Representante del Área, INETUM PERÚ <a href="mailto:esteban.cardenas@inetum.com" class="text-blue-500 hover:underline">esteban.cardenas@inetum.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Yumar Manrique Araujo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón de Volver Arriba -->
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+
+    <script>
+        // Inicializar AOS
+        AOS.init();
+
+        // Menú hamburguesa
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Desplazamiento suave con compensación por la altura del header
+        const navLinks = document.querySelectorAll('.nav-link');
+        const header = document.getElementById('header');
+        const headerHeight = header.offsetHeight;
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                const targetPosition = targetSection.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Resaltar enlace activo
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Mostrar/Ocultar botón de volver arriba
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        });
+
+        // Efecto de máquina de escribir para "Sobre Mí"
+        const textElement = document.getElementById('sobre-mi-text');
+        const textToType = "Soy Yumar Manrique Araujo, un desarrollador Full-Stack apasionado por crear soluciones tecnológicas innovadoras y eficientes. Con experiencia en desarrollo web, soporte técnico y análisis de sistemas, domino tecnologías como Java, C#, VBasic, Python, HTML, CSS, Tailwind CSS, SQL Server y MySQL. Estoy certificado como Digitador por Inetum Perú y he completado el curso 'Productos y Canales Digitales' del Banco BCP, lo que me ha permitido fortalecer mis habilidades en digitalización y gestión de procesos. Mi enfoque se basa en metodologías ágiles como SCRUM, y cuento con experiencia en mantenimiento preventivo y correctivo, así como en modelos de negocio como Canvas. Disfruto resolver problemas complejos y contribuir al éxito de proyectos tecnológicos, combinando mis habilidades técnicas y mi compromiso con la mejora continua.";
+        let index = 0;
+        let isBlinking = true;
+
+        function typeWriter() {
+            if (index < textToType.length) {
+                textElement.textContent = textToType.substring(0, index + 1);
+                index++;
+                setTimeout(typeWriter, 50); // Velocidad de escritura (50ms por carácter)
+            } else {
+                // Cuando termina de escribir, sigue parpadeando
+                setInterval(blinkCursor, 750);
+            }
+        }
+
+        // Función para el parpadeo del cursor
+        function blinkCursor() {
+            if (isBlinking) {
+                textElement.style.borderRight = '2px solid transparent';
+            } else {
+                textElement.style.borderRight = '2px solid var(--accent)';
+            }
+            isBlinking = !isBlinking;
+        }
+
+        // Iniciar el efecto de escritura cuando la página carga
+        window.onload = function() {
+            typeWriter();
+        };
+    </script>
+</body>
+</html>
